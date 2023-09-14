@@ -19,11 +19,7 @@
    --transition: .4s ease;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
+h1,h2,h3,h4,h5{
    line-height: 120%;
 
 }
@@ -62,9 +58,10 @@ h5 {
 p {
    font-size: 17px;
    line-height: 140%;
+   color: var(--color-dark-variant);
 }
 
-.heading p {
+.heading-p {
    padding-top: 9rem;
 }
 
@@ -136,8 +133,7 @@ nav {
    top: 0;
    left: 0;
    display: grid;
-   place-items: center;
-   background: red;
+   place-items: center;  
    height: 8rem;
    width: 110%;
    position: fixed;
@@ -163,6 +159,7 @@ nav {
    font-size: 32px;
    color: var(--color-black) !important;
    text-decoration: none !important;
+   text-align: center;
 }
 
 .nav-links {
@@ -174,6 +171,177 @@ nav {
 /*..............End nav bar.....................*/
 
 
+ /*---------start header section-------*/
+
+ header{
+   padding-top: 14rem;
+ }
+ .header-container{
+   display: grid;
+   grid-template-columns:1fr 1fr;
+   max-width: 820px;
+   gap: 20px;
+ }
+ .header-right{text-align: center;
+   margin: auto;
+
+ }
+ .header-right p{
+   color: var(--color-dark-variant);
+
+ }
+ .header-right h2{
+   margin-top: .4rem;
+ }
+ .header-right.header-action-aria{
+   margin-top: 1rem;
+   display: flex;
+   gap: .7rem;
+ }
+ .header-social{
+   display: flex;
+   gap: .7rem;
+   justify-content: center;
+   margin: .7rem auto;
+ }
+
+ /*..............End  header section.....................*/
 
 
-ends on 0:15:09 minutes
+
+     /*---------start about section-------*/
+
+ .about-container{
+   display: grid;
+   grid-template-columns: 38% auto;
+   gap: 4rem;
+   align-items: center;
+ }
+ .about-left{border-radius: 20px;
+   overflow: hidden;
+ }
+ .basic-edu{
+   display: flex;
+   gap: 32px;
+   margin-bottom: 32px;
+
+ }
+
+ .edu-box{
+   padding: 24px;
+   text-align: center;
+   border: 1px solid var(--color-dark-variant);
+   border-radius: 30px;
+   width: 100%;
+ }
+.edu-box img{
+margin: auto;
+}
+ /*---------end about section-------*/
+
+
+  /*---------start experience section-------*/
+.experience-container{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 4rem;
+}
+.experience-box{
+   border: 1px solid var(--color-dark-variant);
+   border-radius: 30px;
+   padding: 24px; 
+}
+.experience-box h2{
+   text-align: center;
+   margin-bottom: 1rem;
+}
+.experience{
+   display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 30px;
+
+}
+.ex-div{
+   margin: auto;
+   display: flex;
+   gap: 20px;
+}
+
+
+   section{
+      position: relative;
+   }
+   .arrow{
+     position: absolute;
+  right: 10%;
+  transition: var(--transition);
+  }
+  .arrow:hover{
+  margin-top: .5rem;
+  }
+   .experience-container{
+      display: grid;
+       grid-template-columns: 1fr  1fr;
+   gap: 4rem;
+   }
+     /*---------end  experience section-------*/
+   /*--------start projects section-------*/
+   .project-container{
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     gap: 30px;
+  }
+  .header-action-aria{
+   display: flex;
+  }
+  .project{
+     padding: 24px;
+     border: 1px solid var(--color-dark-variant);
+     border-radius: 30px;
+     text-align: center;
+  }
+  .project img{
+     border-radius: 30px;
+     margin-bottom: 1rem;
+  }
+    /*--------end projects section-------*/
+    /*--------start contact section-------*/
+    .contact-container{
+  max-width: 30rem;
+  border: 1px solid var(--color-dark-variant);
+  padding: 24px;
+  border-radius: 30px;
+  
+    }
+    .email,.linkedin{
+     display: flex;
+     align-items: center;
+     gap: 5rem;
+    }
+   /*--------end contact section-------*/
+    /*--------start footer section-------*/
+  footer{
+     margin-top: 9rem;
+     padding: 30px;
+     text-align: center;
+  }
+  footer .nav-link{
+   justify-content: center;
+   margin-bottom: 3rem;
+  }
+    /*--------end footer section-------*/
+     /*--------start media sreen section-------*/
+     /*max-width*/
+     @media (max-width:1024){
+          /*start about*/
+          .about-container{
+          }
+          /*start experience*/
+          .experience-container{gap: 30px;
+          }
+           /*start projects*/
+          .project-container{grid-template-columns: repeat(2,1fr) ;
+          }
+     }
+     /*--------end  media sreen section-------*/
+  
